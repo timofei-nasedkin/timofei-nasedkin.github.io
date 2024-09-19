@@ -1,7 +1,504 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World 4444</h1>
-<p>My website on GitHub Pages. It works!</p>
+<html lang="en">
+
+<head>
+<title>Hunt - feed the frog 3</title>
+<META NAME="Description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache">
+
+
+
+
+<style type="text/css" >
+
+@font-face {
+font-family: "Kalam-Regular";  
+src: url("fonts/Kalam-Regular.ttf") format("truetype");
+/* Kalam-Regular.ttf - Copyright (c) 2014, Indian Type Foundry. This Font Software is licensed under the SIL Open Font License, Version 1.1. more ../fonts/OFL.txt */
+font-style: normal; 
+font-weight: normal;
+ }
+
+
+
+
+html{
+
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+							  
+touch-action:none;
+-ms-touch-action:none;
+width:100%;
+height:100%;
+font-family: Kalam-Regular, Helvetica, Arial, Century, Geneva, sans-serif;
+padding: 0px;
+margin: 0px; 
+}
+
+body{
+
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+
+
+
+touch-action:none;
+-ms-touch-action:none;    
+
+width:100%;
+height:100%;
+font-weight:bold;
+padding: 0px;
+margin: 0px;
+-moz-user-select: none;
+-khtml-user-select: none;
+ 
+display: flex; justify-content: center; align-items: center;
+
+background: linear-gradient( #1db6f6 , #98E0FE  60% , #57ac00 , #6ad100  40% );
+}
+
+
+
+#IEFfield{
+
+
+
+touch-action:none;
+-ms-touch-action:none;
+overflow: hidden;
+padding: 0px;
+margin: 0 0 0 0;
+border: 0px;
+
+display:none;
+
+}
+
+
+
+
+#IEFmessage{
+
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+		
+		
+touch-action:none;
+-ms-touch-action:none;
+position: absolute;
+z-index:2;
+top: 60px;
+right: 0px;
+
+border: 1px solid #ffd800;
+width:300px;
+height:auto;
+padding: 5px;
+margin: 0px;
+
+overflow: hidden;
+
+overflow-y: auto;
+
+border-radius: 25px 0px 0px 25px ;
+display: none;
+background-color: #FFFFCC;
+font-weight:bold; 
+font-family: Kalam-Regular,  cursive;
+text-align: center;
+color: #000000;
+font-size: 16px;
+font-weight:400;
+
+line-height: 1;
+
+scrollbar-width: thin;
+  scrollbar-color: #ffd800 #FFFFCC;
+
+}
+
+
+ 
+
+
+
+
+
+
+.letters{
+touch-action:none;
+-ms-touch-action:none;
+width: 40px;
+height:40px;
+overflow: hidden;
+font-size: 40px;
+padding: 0 0 2px 0;
+margin: auto;
+border-radius: 2px;
+display: block;
+
+color: red;
+line-height: 1;
+}
+
+
+
+
+
+
+
+.lang_div{
+touch-action:none;
+-ms-touch-action:none;
+width: 150px;
+height:auto;
+font-size: 20px;
+font-weight: normal;
+text-align:center;
+margin-top: 15px;
+margin-left:auto; 
+margin-right:auto;
+cursor: pointer;
+background-color: #FFFFCC;
+border-radius: 0px;
+border: 0px  #00bcf2 solid;
+padding: 5px;
+transform: rotate(-5deg);
+}
+
+
+
+
+
+
+#IEFservices_menu{
+
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+
+
+
+position: absolute;
+z-index:3;
+top: 5px;
+left: 5px;
+touch-action:none;
+-ms-touch-action:none;
+
+width:54px;
+height:54px;
+border:0px;
+
+
+display: block;
+
+text-align:center;
+
+line-height: 54px;
+
+ border-radius: 100%;
+}
+
+
+
+
+
+#IEFmenu{
+
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+
+font-family: Kalam-Regular,  cursive;
+touch-action:none;
+-ms-touch-action:none;
+display: block;
+width:54px;
+height:54px;
+font-size: 35px;
+line-height: 54px;
+background-color: #ffd800;
+color:#000;
+text-align:center;
+float:left;
+overflow: hidden;
+border:0px;
+
+border-radius: 50% ;
+box-shadow:  0px 0px 5px 1px rgba(34, 60, 80, 0.2) inset;
+}
+
+
+
+
+
+
+#IEFhome,#IEFpr2,#IEFpr2_2,#IEFEr_1,#IEFEr_2{
+font-family: Kalam-Regular,  cursive;
+
+touch-action:none;
+-ms-touch-action:none;
+width:40px;
+height:40px;
+background-color: #fdc807;
+transform: rotate(25deg);
+color:#fff;
+font-size: 40px;
+display: none;
+border-radius: 50% ;
+border:0px;
+line-height: 40px;
+box-shadow:  0px 0px 5px 1px rgba(34, 60, 80, 0.1) inset;
+}
+
+#IEFpr2_2{
+
+display: inline-block;
+}
+
+#IEFEr_1,#IEFEr_2{
+
+font-size: 16px;
+transform: rotate(0deg);
+ width:auto;
+ 
+ height:auto;
+
+ display: inline-block;
+border-radius: 5px ;
+line-height: none;
+
+padding: 5px;
+ }
+
+
+#IEFpr2 { 
+width:25px;
+height:25px;
+
+line-height: 25px;
+
+font-size: 18px;
+
+margin-left: 0%;
+
+display: inline-block; }
+
+
+#IEFpause,#IEFpr
+{
+
+font-family: Helvetica, Arial, Century, Geneva, sans-serif;
+
+ touch-action:none;
+-ms-touch-action:none;
+width:45px;
+height:45px;
+
+margin-left: 5%;
+
+font-size: 35px;
+color:#fff;
+display: none;
+
+background-color:#000000;
+border-radius: 50% ;
+border:0px;
+line-height: 45px;
+
+box-shadow:  0px 0px 10px 1px rgba(34, 60, 80, 0.1) inset;
+}
+
+
+#IEFpr { 
+width:25px;
+height:25px;
+
+line-height: 25px;
+
+font-size: 18px;
+
+margin-left: 0%;
+
+display: inline-block; }
+
+
+
+
+#IEFhelp{
+
+font-family: Kalam-Regular,  cursive;
+
+ touch-action:none;
+-ms-touch-action:none;
+width:50px;
+height:50px;
+
+margin-left: 5%;
+transform: rotate(-45deg);
+font-size: 35px;
+color:#fff;
+display: none;
+
+background-color:red;
+border-radius: 50% ;
+border:0px;
+line-height: 50px;
+
+box-shadow:  0px 0px 10px 1px rgba(34, 60, 80, 0.1) inset;
+}
+
+#IEFlanguage{
+font-family: Kalam-Regular,  cursive;
+touch-action:none;
+-ms-touch-action:none;
+width:40px;
+height:40px;
+line-height: 40px;
+margin-left: 5%;
+transform: rotate(30deg);
+font-size: 40px;
+text-align:center;
+display: none;
+border:0px;
+border-radius: 50% ;
+
+padding: 0px;
+
+}
+
+
+
+#IEFaudio{
+font-family: Kalam-Regular,  cursive;
+touch-action:none;
+-ms-touch-action:none;
+text-align:center;
+width:50px;
+height:50px;
+margin-left: 5%;
+line-height: 50px;
+background-color:#35a300;
+transform: rotate(-10deg);
+color:#fff;
+font-size: 45px;
+display: none;
+border-radius: 50% ;
+border:0px;
+box-shadow:  0px 0px 10px 1px rgba(34, 60, 80, 0.2) inset;
+}
+
+
+
+
+
+
+
+@keyframes moving {
+    100% {transform: rotate(360deg);}
+}
+
+#IEFloader {
+width: 0; 
+height: 0;
+margin: 60px;
+border: 13px solid transparent;
+border-radius: 50%;
+box-shadow: -30px -30px 0 0 red,
+30px 30px 0 0 blue,
+-30px 30px 0 0 yellow,
+30px -30px 0 0 grey,
+0 -45px 0 0 orange,
+0 45px 0 0 aqua,
+45px 0 0 0 brown,
+-45px 0 0 0 crimson;
+
+animation: moving 3s infinite linear;
+}
+
+
+@media (max-width: 400px) { #IEFhome,#IEFlanguage,#IEFhelp, #IEFpause, #IEFaudio {width:30px; height:30px; font-size: 28px; line-height: 30px;}  #IEFmessage{font-size: 16px;} }
+
+
+</style>
+
+
+
+</head>
+
+
+<body >
+
+
+
+
+<div id='IEFloader' ></div>
+
+
+
+
+
+
+
+
+
+<div id='IEFmessage'><div id='IEFm'></div><div  id='IEFhelp_end'  class='letters'  >&times;</div></div>
+
+<canvas id="IEFfield" ></canvas>
+
+<div id='IEFservices_menu'>
+
+<div id='IEFmenu'  >&#9776;</div>
+
+<div id='IEFhome' >&#8634;</div>
+<div id='IEFpause' >&#448;&#160;&#448;</div>
+<div id='IEFhelp' >?</div>
+<div id='IEFlanguage' >&#127760;</div>
+<div id='IEFaudio' >&#9835;</div>
+
+</div>
+
+<div id ='IEFaudio_control' style = 'display:none' ></div>
+
+
+
+<script src="scrbody.js"></script>
+
+
+<script>
+
+
+window.addEventListener('load', Game_Frog_3  , {passive:false});
+
+
+</script>
+
+    
+
 </body>
 </html>
+
+
