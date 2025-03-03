@@ -8384,9 +8384,9 @@ function StartGame () {
 		  
 		       mutePage();
 
-	           // alert('Реклама между уровнями');   //Для тэста закрыть
+	          //  alert('Реклама между уровнями');   //Для тэста закрыть
 			   
-			   
+			  Reclama_End( 'errorReklama' )
 
             } catch (e) { console.log("Get Start AD game error: ", e);
 
